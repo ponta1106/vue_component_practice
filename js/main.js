@@ -21,7 +21,7 @@
       }
     }
   })
-
+  
   var maritozzoComponent = Vue.extend({
     template: '<img src="maritozzo.png" id="maritozzo">',
   })
@@ -33,11 +33,15 @@
       'maritozzo-component': maritozzoComponent
     },
     data: {
-      total: 0
+      total: 0,
+      isActive: false,
     },
     methods: {
       incrementTotal() {
         this.total++;
+      },
+      active() {
+        this.isActive = !this.isActive
       }
     }
 

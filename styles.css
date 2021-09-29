@@ -7,3 +7,15 @@ body {
   width: 100px;
   height: 100px;
 }
+
+button {
+  border: none;
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .7;
+}
